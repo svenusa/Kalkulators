@@ -54,7 +54,7 @@ btnAtn=Button(logs,text="-",padx='40',pady="20",command=lambda:btnCommand("-") )
 btnReiz=Button(logs,text="*",padx='40',pady="20",command=lambda:btnCommand("*") )
 btnDal=Button(logs,text="/",padx='40',pady="20",command=lambda:btnCommand("/") )
 btnC=Button(logs,text="C",padx='40',pady="20",command=lambda:btnCommand("C") )
-btnEQ=Button(logs,text="=",padx='40',pady="20",command=lambda:btnCommand("="),command=Vienads )
+btnEQ=Button(logs,text="=",padx='40',pady="20",command=Vienads )
 
 Display.grid(row=0, column=0, columnspan=4) #Atrašanās vieta pogām
 btn7.grid(row=1,column=0)
