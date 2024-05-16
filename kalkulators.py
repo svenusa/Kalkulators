@@ -36,6 +36,11 @@ def Vienads():
         Display.insert(0,str(result))
     return 0
 
+def notirit():
+    Display.delete(0,END)
+    num1=0
+    mathOp=""
+    return 0
 
 Display=Entry(logs,width=15,bd=10,font=("Arial Black",20),justify="right")#Lodziņš spociņš
 
@@ -53,7 +58,7 @@ btnSask=Button(logs,text="+",padx='40',pady="20",command=lambda:btnCommand("+") 
 btnAtn=Button(logs,text="-",padx='40',pady="20",command=lambda:btnCommand("-") )
 btnReiz=Button(logs,text="*",padx='40',pady="20",command=lambda:btnCommand("*") )
 btnDal=Button(logs,text="/",padx='40',pady="20",command=lambda:btnCommand("/") )
-btnC=Button(logs,text="C",padx='40',pady="20",command=lambda:btnCommand("C") )
+btnC=Button(logs,text="C",padx='40',pady="20",command=notirit )
 btnEQ=Button(logs,text="=",padx='40',pady="20",command=Vienads )
 
 Display.grid(row=0, column=0, columnspan=4) #Atrašanās vieta pogām
